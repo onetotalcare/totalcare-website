@@ -28,8 +28,34 @@
       // Initialize active navigation state
       this.initActiveNavigation();
 
+      // Check for form submission success
+      this.checkFormSuccess();
+
       // Log ready state
       console.log('Total Care website initialized');
+    },
+
+    /**
+     * Check if form was submitted successfully (via URL param)
+     */
+    checkFormSuccess() {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('success') === 'true') {
+        // Show success message
+        const form = document.getElementById('contact-form');
+        if (form) {
+          const successMsg = document.createElement('div');
+          successMsg.className = 'mt-6 p-5 bg-green-50 border border-green-200 text-green-700 text-sm text-center';
+          successMsg.innerHTML = '<strong>Thank you!</strong> Your message has been sent. We\'ll get back to you within 24 hours.';
+          form.parentNode.insertBefore(successMsg, form.nextSibling);
+
+          // Hide the form
+          form.style.display = 'none';
+
+          // Clean up URL
+          window.history.replaceState({}, document.title, window.location.pathname + '#contact');
+        }
+      }
     },
 
     /**
