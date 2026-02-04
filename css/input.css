@@ -145,6 +145,19 @@ html {
   transform: translateX(0);
 }
 
+.mobile-menu-backdrop.open {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.mobile-nav-link {
+  transition: color 0.2s ease;
+}
+
+.mobile-nav-link:hover {
+  color: var(--color-accent);
+}
+
 /* ============================================
    Loading State
    ============================================ */
