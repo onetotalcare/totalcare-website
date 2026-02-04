@@ -1,0 +1,12 @@
+{
+  "name": "totalcare-landing",
+  "version": "1.0.0",
+  "description": "Total Care Cleaning Services Landing Page",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./css/input.css -o ./css/styles.css --watch",
+    "build": "npx tailwindcss -i ./css/input.css -o ./css/styles.css --minify"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.0.0"
+  }
+}

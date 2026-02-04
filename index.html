@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Total Care Cleaning Services - House & Office Cleaning Experts. Bringing sparkle, comfort and care to every space.">
+
+  <title>Total Care | House & Office Cleaning Experts</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+  <!-- Tailwind CSS (CDN for development - use build for production) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#2C5266',
+              dark: '#1A323D',
+            },
+            accent: '#5C94A1',
+            surface: {
+              light: '#E0F0F2',
+              white: '#FFFFFF',
+            }
+          },
+          fontFamily: {
+            display: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            body: ['Montserrat', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+          },
+          letterSpacing: {
+            'widest': '0.2em',
+            'wider': '0.125em',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/input.css">
+</head>
+<body class="h-full font-body text-primary-dark loading">
+
+  <!-- ============================================
+       HEADER / NAVIGATION
+       ============================================ -->
+  <header id="header" class="fixed top-0 left-0 right-0 z-50 bg-white/70 backdrop-blur-md transition-all duration-300">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex-shrink-0">
+        <img src="assets/images/logo.png" alt="Total Care" class="h-16 md:h-10 w-auto object-contain">
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="hidden lg:flex items-center gap-12" role="navigation" aria-label="Main navigation">
+        <a href="#home" class="nav-link text-[11px] font-semibold tracking-[2px] text-primary hover:text-primary-dark">HOME</a>
+        <a href="#services" class="nav-link text-[11px] font-semibold tracking-[2px] text-primary hover:text-primary-dark">SERVICES</a>
+        <a href="#philosophy" class="nav-link text-[11px] font-semibold tracking-[2px] text-primary hover:text-primary-dark">WHY US?</a>
+        <a href="#gallery" class="nav-link text-[11px] font-semibold tracking-[2px] text-primary hover:text-primary-dark">GALLERY</a>
+        <a href="#contact" class="nav-link text-[11px] font-semibold tracking-[2px] text-primary hover:text-primary-dark">CONTACT</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <a href="https://wa.me/15109780686" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center justify-center px-6 py-3.5 bg-primary text-white text-[10px] font-bold tracking-[3px] hover:bg-primary-dark transition-colors">
+        INQUIRE NOW
+      </a>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2" aria-label="Toggle menu" aria-expanded="false">
+        <i data-lucide="menu" class="w-6 h-6 text-primary"></i>
+      </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="mobile-menu fixed inset-y-0 right-0 w-full max-w-sm bg-white shadow-xl lg:hidden z-50">
+      <div class="p-6">
+        <button id="mobile-menu-close" class="absolute top-6 right-6" aria-label="Close menu">
+          <i data-lucide="x" class="w-6 h-6 text-primary"></i>
+        </button>
+        <nav class="mt-12 flex flex-col gap-6">
+          <a href="#home" class="text-lg font-medium text-primary">Home</a>
+          <a href="#services" class="text-lg font-medium text-primary">Services</a>
+          <a href="#philosophy" class="text-lg font-medium text-primary">Philosophy</a>
+          <a href="#gallery" class="text-lg font-medium text-primary">Gallery</a>
+          <a href="#contact" class="text-lg font-medium text-primary">Contact</a>
+          <a href="https://wa.me/15109780686" target="_blank" rel="noopener noreferrer" class="mt-4 inline-flex items-center justify-center px-6 py-4 bg-primary text-white text-sm font-bold tracking-wider">
+            INQUIRE NOW
+          </a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============================================
+         HERO SECTION
+         ============================================ -->
+    <section id="home" class="relative min-h-[700px] flex items-center justify-center bg-cover bg-center" style="background-image: url('assets/images/hero-bg.jpg');">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-primary-dark/30"></div>
+
+      <div class="relative z-10 flex flex-col items-center gap-6 px-6 py-24 pt-32 text-center">
+        <!-- Logo Icon -->
+        <img src="assets/images/logo-icon.png" alt="" class="w-48 h-48 md:w-58 md:h-58 object-contain" aria-hidden="true">
+
+        <!-- Headline -->
+        <div> <!-- class="bg-primary-dark/40 p-5 max-w-4xl"   Semi-transparent background for readabilityß--> 
+          <h1 class="font-display text-4xl md:text-6xl lg:text-7xl font-light text-white mb-2">
+            House & Office Cleaning Experts
+          </h1>
+          <p class="font-body text-lg md:text-2xl font-normal text-white">
+            Bringing sparkle, comfort and care to every space.
+          </p>
+        </div>
+
+        <!-- CTA Button 
+        <a href="#services" class="btn-outline mt-4 px-10 py-4 text-[11px] font-medium tracking-[3px]">
+          OUR SERVICES
+        </a>-->
+        <a href="#services" target="_blank" rel="noopener noreferrer" class="hidden md:flex items-center justify-center px-10 py-3.5 bg-primary text-white text-[10px] font-bold tracking-[3px] hover:bg-primary-dark transition-colors">
+        OUR SERVICES
+      </a>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES - ALL ROOMS
+         ============================================ -->
+    <section id="services" class="bg-white">
+      <div class="max-w-[1440px] mx-auto px-6 md:px-20 py-24 md:py-32">
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+          <!-- Left Column -->
+          <div class="w-full lg:w-[480px] flex-shrink-0 fade-in">
+            <span class="font-display text-[150px] md:text-[200px] font-light italic text-accent/30 leading-none -tracking-[8px]">01</span>
+
+            <div class="mt-[-40px] md:mt-[-60px]">
+              <h2 class="font-display text-5xl md:text-6xl font-light text-primary-dark -tracking-[1px]">All Rooms</h2>
+              <p class="mt-4 text-[12px] font-semibold tracking-[3px] text-accent/60">THE STANDARD OF EXCELLENCE</p>
+
+              <!-- Service List -->
+              <ul class="mt-8 w-full max-w-[380px]" role="list">
+                <li class="service-item flex items-center justify-between py-5">
+                  <span class="text-[15px] font-light text-primary/80">Clean glass surfaces</span>
+                  <i data-lucide="check" class="w-[18px] h-[18px] text-accent/60"></i>
+                </li>
+                <li class="service-item flex items-center justify-between py-5">
+                  <span class="text-[15px] font-light text-primary/80">Mop all hard surface floors</span>
+                  <i data-lucide="check" class="w-[18px] h-[18px] text-accent/60"></i>
+                </li>
+                <li class="service-item flex items-center justify-between py-5">
+                  <span class="text-[15px] font-light text-primary/80">Dust shelves & blinds</span>
+                  <i data-lucide="check" class="w-[18px] h-[18px] text-accent/60"></i>
+                </li>
+                <li class="service-item flex items-center justify-between py-5">
+                  <span class="text-[15px] font-light text-primary/80">Vacuum all carpeted areas</span>
+                  <i data-lucide="check" class="w-[18px] h-[18px] text-accent/60"></i>
+                </li>
+                <li class="flex items-center justify-between py-5">
+                  <span class="text-[15px] font-light text-primary/80">Wipe & clean mirrors</span>
+                  <i data-lucide="check" class="w-[18px] h-[18px] text-accent/60"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column - Image -->
+          <div class="w-full lg:flex-1 fade-in">
+            <div class="aspect-[4/3] lg:aspect-auto lg:h-[600px] overflow-hidden">
+              <img src="assets/images/room-living.png" alt="Clean living room" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES - KITCHEN
+         ============================================ -->
+    <section class="bg-primary-dark">
+      <div class="max-w-[1440px] mx-auto px-6 md:px-20 py-24 md:py-32">
+        <div class="flex flex-col-reverse lg:flex-row items-center gap-12 lg:gap-20">
+          <!-- Left Column - Image -->
+          <div class="w-full lg:flex-1 fade-in">
+            <div class="aspect-[4/3] lg:aspect-auto lg:h-[600px] overflow-hidden">
+              <img src="assets/images/room-kitchen.png" alt="Clean modern kitchen" class="w-full h-full object-cover">
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="w-full lg:w-[480px] flex-shrink-0 fade-in">
+            <span class="font-display text-[150px] md:text-[200px] font-light italic text-surface-light/10 leading-none -tracking-[8px]">02</span>
+
+            <div class="mt-[-40px] md:mt-[-60px] p-6 md:p-10 rounded-lg">
+              <h2 class="font-display text-5xl md:text-6xl font-light text-white -tracking-[1px]">Kitchen</h2>
+              <p class="mt-4 text-[12px] font-semibold tracking-[3px] text-white/80">CULINARY SANCTUARY</p>
+
+              <!-- Service List -->
+              <ul class="mt-8 w-full max-w-[380px]" role="list">
+                <li class="flex items-center justify-between py-5 border-b border-primary/20">
+                  <span class="text-[15px] font-light text-white">Clean stovetop & microwave</span>
+                  <i data-lucide="check" class="w-[18px] h-[18px] text-white"></i>
+                </li>
+                <li class="flex items-center justify-between py-5 border-b border-primary/20">
+                  <span class="text-[15px] font-light text-white">Wipe & disinfect countertops</span>
+                  <i data-lucide="check" class="w-[18px] h-[18px] text-white"></i>
+                </li>
+                <li class="flex items-center justify-between py-5 border-b border-primary/20">
+                  <span class="text-[15px] font-light text-white">Wipe exterior of cabinetry</span>
+                  <i data-lucide="check" class="w-[18px] h-[18px] text-white"></i>
+                </li>
+                <li class="flex items-center justify-between py-5">
+                  <span class="text-[15px] font-light text-white">Polish chrome fixtures & sink</span>
+                  <i data-lucide="check" class="w-[18px] h-[18px] text-white"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES - BATHROOMS
+         ============================================ -->
+    <section class="bg-white">
+      <div class="max-w-[1440px] mx-auto px-6 md:px-20 py-24 md:py-32">
+        <div class="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+          <!-- Left Column -->
+          <div class="w-full lg:w-[480px] flex-shrink-0 fade-in">
+            <span class="font-display text-[150px] md:text-[200px] font-light italic text-accent/10 leading-none -tracking-[8px]">03</span>
+
+            <div class="mt-[-40px] md:mt-[-60px]">
+              <h2 class="font-display text-5xl md:text-6xl font-light text-primary-dark -tracking-[1px]">Bathrooms</h2>
+              <p class="mt-4 text-[12px] font-semibold tracking-[3px] text-accent/60">THE PRIVATE SPA EXPERIENCE</p>
+
+              <!-- Service List -->
+              <ul class="mt-8 w-full max-w-[380px]" role="list">
+                <li class="service-item flex items-center justify-between py-5">
+                  <span class="text-[15px] font-light text-primary/80">Polish all faucets</span>
+                  <i data-lucide="check" class="w-[18px] h-[18px] text-accent/60"></i>
+                </li>
+                <li class="service-item flex items-center justify-between py-5">
+                  <span class="text-[15px] font-light text-primary/80">Clean & scrub shower & tub</span>
+                  <i data-lucide="check" class="w-[18px] h-[18px] text-accent/60"></i>
+                </li>
+                <li class="flex items-center justify-between py-5">
+                  <span class="text-[15px] font-light text-primary/80">Clean sink & polish chrome</span>
+                  <i data-lucide="check" class="w-[18px] h-[18px] text-accent/60"></i>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Right Column - Image -->
+          <div class="w-full lg:flex-1 fade-in">
+            <div class="aspect-[4/3] lg:aspect-auto lg:h-[600px] overflow-hidden">
+              <img src="assets/images/room-bathroom.png" alt="Clean bathroom" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         SERVICES - BUILDINGS / COMMON AREAS
+         ============================================ -->
+    <section class="relative bg-primary min-h-[564px]">
+      <div class="max-w-[1440px] mx-auto flex flex-col lg:flex-row">
+        <!-- Background Image (Right Side) -->
+        <div class="lg:absolute lg:right-0 lg:top-0 lg:bottom-0 lg:w-1/2 h-64 lg:h-auto">
+          <img src="assets/images/room-common.png" alt="Building common area" class="w-full h-full object-cover">
+        </div>
+
+        <!-- Left Content -->
+        <div class="relative z-10 w-full lg:w-[600px] px-8 md:px-20 py-20 md:py-24 fade-in">
+          <div class="flex flex-col gap-8">
+            <div>
+              <h2 class="font-display text-5xl md:text-7xl font-normal text-white -tracking-[1.5px]">Buildings</h2>
+              <p class="mt-3 text-xl font-semibold tracking-[3px] text-white/80">Common areas</p>
+            </div>
+
+            <!-- Service List with Bullets -->
+            <ul class="flex flex-col gap-5" role="list">
+              <li class="flex items-center gap-4">
+                <span class="w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                <span class="text-sm font-normal text-white">Daily or scheduled cleaning of shared spaces</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                <span class="text-sm font-normal text-white">Sanitization of elevators, handrails, and surfaces</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                <span class="text-sm font-normal text-white">Carpet vacuuming and floor mopping</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                <span class="text-sm font-normal text-white">Baseboard cleaning</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                <span class="text-sm font-normal text-white">Trash collection and recycling management</span>
+              </li>
+              <li class="flex items-center gap-4">
+                <span class="w-1.5 h-1.5 rounded-full bg-white flex-shrink-0"></span>
+                <span class="text-sm font-normal text-white">Customized cleaning plans for your building</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         PHILOSOPHY SECTION
+         ============================================ -->
+    <section id="philosophy" class="bg-surface-light">
+      <div class="max-w-[1440px] mx-auto px-6 py-24 md:py-32">
+        <div class="flex flex-col items-center gap-16">
+          <!-- Header -->
+          <div class="text-center fade-in">
+            <h2 class="font-display text-4xl md:text-[56px] font-light text-primary">
+              Trusted for Excellence,
+            </h2>
+            <h2 class="font-display text-4xl md:text-[56px] font-light italic text-primary">
+              Chosen for Care
+            </h2>
+          </div>
+
+          <!-- Features Grid -->
+          <div class="grid md:grid-cols-2 gap-12 md:gap-20 max-w-[900px] w-full fade-in">
+            <!-- Feature 1 -->
+            <div class="flex flex-col gap-3">
+              <h3 class="text-lg font-semibold text-primary">Expert & Friendly Staff</h3>
+              <p class="text-sm font-normal text-primary leading-relaxed">
+                Experienced, reliable professionals committed to providing the highest quality of service with a personal touch.
+              </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="flex flex-col gap-3">
+              <h3 class="text-lg font-semibold text-primary">Safe & Eco-Friendly</h3>
+              <p class="text-sm font-normal text-primary leading-relaxed">
+                We exclusively use eco-friendly products that are tough on dirt but completely safe for your children and pets.
+              </p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="flex flex-col gap-3">
+              <h3 class="text-lg font-semibold text-primary">Flexible Scheduling</h3>
+              <p class="text-sm font-normal text-primary leading-relaxed">
+                Choose the routine that fits your lifestyle: weekly, bi-weekly, or one-time visits at your convenience.
+              </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="flex flex-col gap-3">
+              <h3 class="text-lg font-semibold text-primary">Tailored Packages</h3>
+              <p class="text-sm font-normal text-primary leading-relaxed">
+                Professional cleaning curated for your lifestyle. We offer affordable, bespoke packages tailored to your needs.
+              </p>
+            </div>
+          </div>
+
+          <!-- Quote Section -->
+          <div class="w-full max-w-[700px] pt-16 md:pt-20 border-t border-black/10 text-center fade-in">
+            <blockquote class="font-display text-xl md:text-2xl font-light text-primary leading-relaxed">
+              "Let us take care of the chores while you enjoy a spotless, welcoming home. Contact us today to book your first cleaning."
+            </blockquote>
+
+            <a href="https://wa.me/15109780686" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center mt-10 px-12 py-5 bg-primary text-white text-[11px] font-semibold tracking-[3px] hover:bg-primary-dark transition-colors">
+              REQUEST A FREE QUOTE
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         GALLERY SECTION
+         ============================================ -->
+    <section id="gallery" class="bg-white">
+      <div class="max-w-[1440px] mx-auto px-6 md:px-12 py-24 md:py-32">
+        <div class="flex flex-col gap-16">
+          <!-- Header -->
+          <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-8 fade-in">
+            <div>
+              <p class="text-[12px] font-semibold tracking-[4px] text-accent mb-4">PORTFOLIO</p>
+              <h2 class="font-display text-4xl md:text-[56px] font-light text-primary-dark">
+                Our Work in <span class="italic">Action</span>
+              </h2>
+            </div>
+            <p class="text-sm font-light text-primary/70 leading-relaxed max-w-[400px]">
+              A curated look at the refined spaces we maintain for our community of discerning clients.
+            </p>
+          </div>
+
+          <!-- Gallery Grid -->
+          <div class="grid md:grid-cols-3 gap-6 fade-in">
+            <div class="gallery-image aspect-[3/4] md:aspect-auto md:h-[500px]">
+              <img src="assets/images/gallery-1.jpg" alt="Clean living space" class="w-full h-full object-cover">
+            </div>
+            <div class="gallery-image aspect-[3/4] md:aspect-auto md:h-[500px] md:mt-12">
+              <img src="assets/images/gallery-2.jpg" alt="Organized bedroom" class="w-full h-full object-cover">
+            </div>
+            <div class="gallery-image aspect-[3/4] md:aspect-auto md:h-[500px]">
+              <img src="assets/images/gallery-3.jpg" alt="Spotless kitchen" class="w-full h-full object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================
+         CONTACT SECTION
+         ============================================ -->
+    <section id="contact" class="bg-surface-light">
+      <div class="max-w-[1440px] mx-auto px-6 md:px-20 py-24 md:py-32">
+        <div class="flex flex-col items-center justify-center gap-12 fade-in">
+          <h2 class="font-display text-4xl md:text-5xl font-light text-primary-dark">Contact us</h2>
+
+          <!-- Contact Info -->
+          <div class="flex flex-col gap-6">
+            <a href="mailto:onetotalcare@gmail.com" class="flex items-center gap-5 group">
+              <i data-lucide="mail" class="w-5 h-5 text-accent"></i>
+              <span class="text-sm text-primary/80 group-hover:text-primary transition-colors">onetotalcare@gmail.com</span>
+            </a>
+            <a href="tel:+15109780686" class="flex items-center gap-5 group">
+              <i data-lucide="phone" class="w-5 h-5 text-accent"></i>
+              <span class="text-sm text-primary/80 group-hover:text-primary transition-colors">+1 (510) 978 - 0686</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer class="bg-white py-16 md:py-20">
+    <div class="max-w-[1440px] mx-auto px-6 md:px-12">
+      <p class="text-[10px] font-normal tracking-[3px] text-primary/40 text-center">
+        &copy; 2026 TOTAL CARE CLEANING SERVICES. FINE CLEANING FOR REFINED LIVING.
+      </p>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/15109780686" target="_blank" rel="noopener noreferrer"
+     class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 bg-[#25D366] rounded-full shadow-lg hover:bg-[#20bd5a] hover:scale-110 transition-all duration-300"
+     aria-label="Contact us on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-7 h-7">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- JavaScript -->
+  <script src="js/components/navigation.js"></script>
+  <script src="js/components/scroll-animations.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
